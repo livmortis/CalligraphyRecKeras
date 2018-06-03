@@ -15,9 +15,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import os
+import theano
 
+theano.config.device = 'gpu'
+theano.config.floatX = 'float32'
 code_path = 'data_after_process/'
-
 
 # bn + prelu
 def bn_prelu(x):
