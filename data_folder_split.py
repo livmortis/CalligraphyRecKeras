@@ -66,9 +66,9 @@ def move_ratio(data_list, original_str, replace_str):
 
 if __name__ == '__main__':
 
-    face_path = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/train/'
-    data_tra_path = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/sample2_keras/face_tra/'
-    data_val_path = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/sample2_keras/face_val/'
+    face_path = '/original_data/train/'
+    data_tra_path = 'data_after_process/train_data/'
+    data_val_path = 'data_after_process/val_data/'
 
     full_child_file, child_file = eachFile(face_path)
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
         # train_move, val_move
         print('proprecessing %s' % i)
 
-        move_ratio(train_list, 'train', 'sample2_keras/face_tra')
-        move_ratio(val_list, 'train', 'sample2_keras/face_val')
+        move_ratio(train_list, 'train', 'data_after_process/train_data')
+        move_ratio(val_list, 'train', 'data_after_process/val_data')
 
 

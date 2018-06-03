@@ -16,7 +16,7 @@ import pandas as pd
 import numpy as np
 import os
 
-code_path = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/sample2_keras/'
+code_path = 'data_after_process/'
 
 
 # bn + prelu
@@ -389,13 +389,13 @@ def save_csv(test_image_path, predict_label):
 
     # main function
 if __name__ == "__main__":
-    train_path = code_path + 'face_tra'
-    val_path = code_path + 'face_val'
-    test_image_path = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/test1/'
+    train_path = code_path + 'train_data'
+    val_path = code_path + 'val_data'
+    test_image_path =  'test_data1'
     num_classes = 100
     BATCH_SIZE = 128
     # WEIGHTS_PATH = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/sample2_keras/chinese_font_recognition/best_weights_hanzi.hdf5'
-    WEIGHTS_PATH = '/Users/xzy/Documents/coder/ML/kaggle/tinyMindGame/sample2_keras/chinese_font_recognition/best_weights_hanzi_userestnet.hdf5'
+    WEIGHTS_PATH = 'best_weights_hanzi_userestnet.hdf5'
     # WEIGHTS_PATH = 'best_weights_hanzi.hdf5'
     max_Epochs = 100
 
