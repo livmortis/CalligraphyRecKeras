@@ -66,7 +66,7 @@ def move_ratio(data_list, original_str, replace_str):
 
 if __name__ == '__main__':
 
-    face_path = '/original_data/train/'
+    face_path = 'original_data/train/'
     data_tra_path = 'data_after_process/train_data/'
     data_val_path = 'data_after_process/val_data/'
 
